@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "951818210161",
+    "project_id": "gaitapplication",
+    "storage_bucket": "gaitapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951818210161:android:f0cb1e0ca52981d23104d0",
+        "android_client_info": {
+          "package_name": "com.example.gaitapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951818210161-709me0k10arr2qk809r5e3e6ddig49fr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzFnJ3TlSr0tdwFEQmI_odVjHO25qdlfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "951818210161-709me0k10arr2qk809r5e3e6ddig49fr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
