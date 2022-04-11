@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_analyze_options.xml" value="0.264" />
+        <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_analyze_results.xml" value="0.2359375" />
+        <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_analyze_seiactivity.xml" value="0.25" />
+        <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_analyze_upload.xml" value="0.25" />
         <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_edit_details.xml" value="0.25" />
         <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_login.xml" value="0.2359375" />
         <entry key="..\:/Users/ujjal/AndroidStudioProjects/GaitApplication/app/src/main/res/layout/activity_main.xml" value="0.264" />

@@ -4,6 +4,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.webkit.MimeTypeMap
 import android.widget.Button
@@ -34,6 +35,8 @@ class UploadDetailsActivity : AppCompatActivity() {
         uploadDetailsToolbar = findViewById(R.id.uploaddetailsToolbar)
         setSupportActionBar(uploadDetailsToolbar)
         videoPath = Uri.parse(intent.getStringExtra("videoPath"))
+        videoPath?.path?.let { Log.i("video.path", it) }
+        Log.i("videoPathString", videoPath.toString())
         uploadBtn = findViewById(R.id.uploadButton)
         nameEd = findViewById(R.id.nameTv)
         ageEd = findViewById(R.id.ageTv)

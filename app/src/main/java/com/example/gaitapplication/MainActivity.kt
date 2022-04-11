@@ -95,6 +95,10 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, UploadActivity::class.java)
         startActivity(intent)
     }
+    fun analyzeClicked(view: View) {
+        val intent = Intent(this, AnalyzeOptionsActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onBackPressed() {
         super.onBackPressed()
