@@ -64,10 +64,10 @@ class AnalyzeSEIActivity : AppCompatActivity() {
 
             val sdf = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss")
             val currentDate = sdf.format(Date())
-            val videoID = "Video_ID_"+currentDate+ UUID.randomUUID().toString()
+            val imageID = "Image_ID_"+currentDate+ UUID.randomUUID().toString()
             // save the selected video in Firebase storage
             val reference = FirebaseStorage.getInstance()
-                .getReference("VideoUploads/" + videoID + "." + getfiletype(imageUri!!))
+                .getReference("ImageUploads/" + imageID + "." + getfiletype(imageUri!!))
             reference.putFile(imageUri!!).addOnSuccessListener { taskSnapshot ->
                 val uriTask = taskSnapshot.storage.downloadUrl
                 while (!uriTask.isSuccessful);
@@ -93,7 +93,7 @@ class AnalyzeSEIActivity : AppCompatActivity() {
                 // Dismiss dialog
                 //progressDialog!!.dismiss()
                 newDownloadTask(findViewById(R.id.PredictiontextView), findViewById(R.id.modePredtextView)).execute(downloadUri)
-                Toast.makeText(this, "Video Uploaded!!", Toast.LENGTH_SHORT).show()
+
             }.addOnFailureListener { e -> // Error, Image not uploaded
                 //progressDialog!!.dismiss()
                 Toast.makeText(this, "Failed " + e.message, Toast.LENGTH_SHORT).show()
@@ -119,7 +119,7 @@ class AnalyzeSEIActivity : AppCompatActivity() {
             val url: URL
             var urlConnection: HttpURLConnection? = null
             return try {
-                url = URL("http://ec2-65-2-38-209.ap-south-1.compute.amazonaws.com:8000/predict_SEI")
+                url = URL("http://ec2-13-235-31-26.ap-south-1.compute.amazonaws.com:8000/predict_SEI")
                 urlConnection = url.openConnection() as HttpURLConnection
                 urlConnection.setRequestMethod("POST")
                 urlConnection.setRequestProperty("Content-Type", "application/json; utf-8")
