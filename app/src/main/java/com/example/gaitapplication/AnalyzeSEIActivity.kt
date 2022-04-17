@@ -119,7 +119,7 @@ class AnalyzeSEIActivity : AppCompatActivity() {
             val url: URL
             var urlConnection: HttpURLConnection? = null
             return try {
-                url = URL("http://ec2-13-235-31-26.ap-south-1.compute.amazonaws.com:8000/predict_SEI")
+                url = URL("http://ec2-43-204-63-184.ap-south-1.compute.amazonaws.com:8000/predict_SEI")
                 urlConnection = url.openConnection() as HttpURLConnection
                 urlConnection.setRequestMethod("POST")
                 urlConnection.setRequestProperty("Content-Type", "application/json; utf-8")
