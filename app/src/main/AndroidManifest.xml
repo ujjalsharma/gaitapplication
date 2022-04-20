@@ -16,6 +16,9 @@
         android:theme="@style/Theme.GaitApplication"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AnalyzeVideoActivity"
+            android:exported="false" />
+        <activity
             android:name=".AnalyzeSEIActivity"
             android:exported="false" />
         <activity

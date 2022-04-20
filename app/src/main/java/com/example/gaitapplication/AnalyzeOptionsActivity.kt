@@ -19,8 +19,8 @@ class AnalyzeOptionsActivity : AppCompatActivity() {
 
     }
     fun cnnvidBtnClicked(view: View) {
-
-        Toast.makeText(this, "Developement in progress!", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, AnalyzeVideoActivity::class.java)
+        startActivity(intent)
 
     }
     fun lstmVidBtnClicked(view: View) {
